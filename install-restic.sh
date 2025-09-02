@@ -3,7 +3,7 @@ set -euo pipefail
 
 # --- Check dependencies ---
 missing=()
-for cmd in curl bunzip2; do
+for cmd in curl bzip2; do
     if ! command -v "$cmd" &>/dev/null; then
         missing+=("$cmd")
     fi
